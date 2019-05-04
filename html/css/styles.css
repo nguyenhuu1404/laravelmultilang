@@ -1,0 +1,98 @@
+@font-face {
+    font-family: 'utmavo';
+    src: url('../fonts/utmavo.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'utmavobold';
+    src: url('../fonts/utmavobold.ttf');
+}
+@font-face {
+    font-family: 'utmavoitalic';
+    src: url('../fonts/utmavoitalic.ttf');
+}
+body{
+    font-family: 'utmavo';
+    font-size: 14px;
+    color: #000000;
+}
+a:hover{text-decoration: none;}
+.full{float: left; width: 100%;}
+.top{min-height: 39px; background: #626262; color: white;}
+.pl-0, .px-0 {
+    padding-left: 0!important;
+}
+.pr-0, .px-0 {
+    padding-right: 0!important;
+}
+.h28{height: 28px;}
+.h45{height: 45px;}
+.h30{height: 30px;}
+.bg-top{background: #626262;}
+.main-menu li{position: relative; padding:0px 10px;}
+.main-menu li a{font-size: 16px; text-transform: uppercase; color: #000000; }
+.main-menu li:nth-child(even):before, .main-menu li:nth-child(even):after {
+    content: '';
+    width: 1px;
+    height: 20px;
+    position: absolute;
+    top: 10px;
+    background-color: #45c0ae;
+}
+.main-menu li:nth-child(even):before {
+    left: 0;
+}
+.main-menu li:nth-child(even):after {
+    right: 0;
+}
+.main-menu li:last-child:after {
+    width: 0px !important;
+}
+.main-menu li:last-child{padding-right: 0px;}
+.utmavobold{font-family: 'utmavobold';}
+.fs16{font-size: 16px;}
+.fs13{font-size: 13px;}
+.fs18{font-size: 18px;}
+.fs30{font-size: 30px;}
+.fs35{font-size: 35px;}
+.fs31{font-size: 31px;}
+.fs21{font-size: 21px;}
+.fs25{font-size: 25px;}
+.fs40{font-size: 40px;}
+.xanh1{color: #079e88;}
+.xanh2{color: #45c0ae;}
+.do{color: #ec4228;}
+.bg_highline{background: url(../images/bg.jpg) repeat;}
+.bg_highline h4:after{border: dotted 1px black;}
+.gach{width: 190px; margin: 0px auto; border-bottom: 1px dotted black; margin-bottom: 10px;}
+.xam{color: #666666;}
+.tienich{background: #f9fafa;}
+.footer{background: #626262;}
+.footer2{padding: 23px 0px; border-top: 1px solid #8c8c8c;}
+.footer2 a{color: white;}
+.solid{border-bottom: 1px solid #e2e2e2;}
+.solid2{border-bottom: 1px dotted #e2e2e2;}
+.social{margin-top: 36px;}
+.social a{display:inline-block; margin-left: 39px;}
+.booking{top: -20px; width: 320px; z-index: 999999;}
+.xanh3{background: #079e88;}
+.booking-content{background: #1bc5ac; opacity: 0.85; color: white; font-size: 12px;}
+.dangki{height: 48px;background: #079e88; border: none; font-size: 15px; color: white;}
+
+@media all and (min-width: 999px) {
+    .booking-right{right: 20px;}
+
+}
+@media all and (max-width: 800px){
+    .booking-right{right: 10px;}
+}
+@media all and (max-width: 767px) {
+
+
+}
+@media all and (max-width: 400px) {
+    .booking-right{right: 0px !important;}
+
+}
+

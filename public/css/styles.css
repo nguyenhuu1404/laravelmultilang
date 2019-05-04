@@ -1,0 +1,158 @@
+@font-face {
+    font-family: 'utmavo';
+    src: url('../fonts/utmavo.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'utmavobold';
+    src: url('../fonts/utmavobold.ttf');
+}
+@font-face {
+    font-family: 'utmavoitalic';
+    src: url('../fonts/utmavoitalic.ttf');
+}
+
+body{
+    font-family: 'utmavo';
+    font-size: 14px;
+    color: #000000;
+}
+a:hover{text-decoration: none;}
+.full{float: left; width: 100%;}
+.top{min-height: 39px; background: #626262; color: white; line-height: 30px;}
+.pl-0, .px-0 {
+    padding-left: 0!important;
+}
+.pr-0, .px-0 {
+    padding-right: 0!important;
+}
+.lh26{line-height: 26px;}
+.lh30{line-height: 30px;}
+.lh22{line-height: 22px;}
+.lh20{line-height: 20px;}
+.lh24{line-height: 24px;}
+.h28{height: 28px;}
+.h45{height: 45px;}
+.h30{height: 30px;}
+.bg-top{background: #626262;}
+.main-menu{font-family: 'Open Sans';}
+.main-menu li{position: relative; padding:0px 10px;}
+.main-menu li a{font-size: 16px; text-transform: uppercase; color: #000000 !important; }
+
+.utmavobold{font-family: 'utmavobold';}
+.fs8{font-size: 8px;}
+.fs9{font-size: 9px;}
+.fs10{font-size: 10px;}
+.fs12{font-size: 12px;}
+.fs13{font-size: 13px;}
+.fs14{font-size: 14px;}
+.fs15{font-size: 15px;}
+.fs16{font-size: 16px;}
+.fs17{font-size: 17px;}
+.fs18{font-size: 18px;}
+.fs20{font-size: 20px;}
+.fs21{font-size: 21px;}
+.fs22{font-size: 22px;}
+.fs23{font-size: 23px;}
+.fs24{font-size: 24px;}
+.fs25{font-size: 25px;}
+.fs26{font-size: 26px;}
+.fs27{font-size: 27px;}
+.fs30{font-size: 30px;}
+.fs31{font-size: 31px;}
+.fs35{font-size: 35px;}
+.fs40{font-size: 40px;}
+.fs41{font-size: 41px;}
+.fs46{font-size: 46px;}
+.xanh1{color: #079e88;}
+.xanh2{color: #45c0ae;}
+.do{color: #ec4228;}
+.do2{color: #fd0202;}
+.gia{color: #fd0303;}
+.face{color: #5887e7;}
+.dat{background: #f70707;}
+.pointer{cursor: pointer;}
+.cl-new{color: #2b2b2b;}
+.bg_highline{background: url(../images/bg.jpg) repeat;}
+.bg_highline h4:after{border: dotted 1px black;}
+.gach{width: 190px; margin: 0px auto; border-bottom: 1px dotted black; margin-bottom: 10px;}
+.xam{color: #666666;}
+.xanh4{color: #036893;}
+.tienich{background: #f9fafa;}
+.footer{background: #626262;}
+.footer2{padding: 23px 0px; border-top: 1px solid #8c8c8c;}
+.footer2 a{color: white;}
+.solid{border-bottom: 1px solid #e2e2e2;}
+.solid4{border-bottom: 4px solid white;}
+.solid2{border-bottom: 1px dotted #e2e2e2;}
+.social{margin-top: 36px;}
+.social a{display:inline-block; margin-left: 39px;}
+.booking{top: -20px; width: 320px; z-index: 99;}
+.xanh3{background: #079e88;}
+.booking-content{background: #1bc5ac; opacity: 0.85; color: white; font-size: 12px;}
+.dangki{height: 48px;background: #079e88; border: none; font-size: 15px; color: white;}
+.hometel{color: #666666 !important; font-size: 16.5px; text-align: justify;}
+.about img, .hometel img{display: block; margin: 0px auto;}
+.bc{background: url(../images/breadcrumb.jpg) no-repeat; background-size: cover; padding: 70px 0px; }
+.send{background: #ff0000; color: white; font-size: 20px; padding: 5px 35px; border: none;}
+.do3{background: #ff0000;}
+.cate{box-shadow: 0px 0px 3px 4px #ededed;
+    border-radius: 1px;}
+.ngay{color: #bbbbbb;}
+.text-black{color: black;}
+.cate a{font-size: 18px; color: #036893;display: block; padding: 5px 0px; margin-left: 8px; border-bottom: 1px dotted #dfdfdf;}
+.title{border-bottom: 1px solid #eaeaea;}
+.cl-icon{color: #222222;}
+.cl-icon img{display: block; margin: 0px auto; margin-bottom: 10px;}
+.bg-xanh{background: #45c0ae;}
+#myTab a.active{color: #ff0000;}
+.hidden{display:none;}
+.mw100{max-width: 100px !important;}
+#booking{border-top: 1px solid #d7dfde;}
+#booking .nav-item.show .nav-link, #booking .nav-link.active{
+    background-color: transparent;
+    border: none;
+}
+#booking .nav-link{color: #000000;}
+#booking .nav-link.active{ color: #45c0ae !important;}
+#booking .nav-link:hover{border: none;}
+#apartment .owl-nav{display: none;}
+#service .owl-next{position: absolute; right: -28px;top: 35%;}
+#service .owl-prev{position: absolute; left: -28px;top: 35%;}
+@media all and (min-width: 999px) {
+    .booking-right{right: 9%;}
+    .cate{min-height: 630px;}
+    .main-menu li:nth-child(even):before, .main-menu li:nth-child(even):after {
+        content: '';
+        width: 1px;
+        height: 20px;
+        position: absolute;
+        top: 10px;
+        background-color: #45c0ae;
+    }
+    .main-menu li:nth-child(even):before {
+        left: 0;
+    }
+    .main-menu li:nth-child(even):after {
+        right: 0;
+    }
+    .main-menu li:last-child:after {
+        width: 0px !important;
+    }
+    .main-menu li:last-child{padding-right: 0px;}
+    .md-absolute{position: absolute;}
+
+}
+@media all and (max-width: 800px){
+    .booking-right{right: 10px; width: 100% !important; margin-top: 15px;}
+}
+@media all and (max-width: 767px) {
+    .about img, .hometel img{width: 100% !important;}
+
+}
+@media all and (max-width: 400px) {
+    .booking-right{right: 0px !important; width: 100% !important; margin-top: 15px;}
+    .about img, .hometel img{width: 100% !important;}
+}
+
