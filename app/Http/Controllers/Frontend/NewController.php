@@ -29,11 +29,11 @@ class NewController extends Controller
         return view('frontend.news.index', $data);
     }
     function detail($id){
-        $data['title'] = 'hotel';
         $post = Post::where('id', $id)->first();
         $data['slider'] = Slider::where('status', 1)->where('trang', 'new')->first();
         $data['title'] = $post->title;
         $data['description'] = $post->meta_description;
+        $data['keywords'] = $post->meta_keywords;
         $data['post'] = $post;
         $data['related'] = [];
         if( $post['category_id'] ){

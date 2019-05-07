@@ -21,6 +21,7 @@ class HomeController extends Controller
     function index(){
         $data['title'] = setting('site.title');
         $data['description'] = setting('site.description');
+        $data['keywords'] = setting('site.keywords');
         $slider = Slider::where('status', 1)->where('trang', 'home')->first();
         $data['sliders'] = false;
         if($slider){
@@ -59,5 +60,10 @@ class HomeController extends Controller
             Newsletter::create($email);
             return redirect('/')->with('emailsuccess', 1);
         }
+    }
+    function search(Request $request){
+        $s = $request->input('s');
+        $data['apartments'] = Apartment::where('status', 1)->whereTranslation('name', 'like', '%'.$s.'%')->get();
+        return view('frontend.home.search', $data);
     }
 }

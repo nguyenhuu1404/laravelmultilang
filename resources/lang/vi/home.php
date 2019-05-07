@@ -75,6 +75,8 @@ return [
     'bc' => 'Đặt phòng hoàn tất',
     'choosedate' => 'Chọn ngày',
     'bookingpage' => 'Trang đặt phòng',
-    'emailsuccess' => 'Đăng kí nhận email thành công'
+    'emailsuccess' => 'Đăng kí nhận email thành công',
+    'search' => 'Tìm kiếm',
+    'noresult' => 'Không có kết quả nào'
 
 ];

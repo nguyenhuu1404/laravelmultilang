@@ -17,6 +17,7 @@ class ApartmentController extends Controller
         $data['otherApartments'] = Apartment::where('hometel_id', $apartment->hometel_id)->whereNotIn('id',[$id])->where('status', 1)->limit(4)->get();
         $data['title'] = $apartment->name;
         $data['description'] = $apartment->description;
+        $data['keywords'] = $apartment->meta_keywords;
         $data['apartment'] = $apartment;
         $data['hometelId'] = $hometelId;
         $data['hometel_id'] = $hometelId;

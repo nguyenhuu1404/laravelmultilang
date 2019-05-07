@@ -69,18 +69,21 @@ $( document ).ready(function() {
       return date;
     }
 
-    $('#search').click(function(){
+    $('#search').click(function(e){
+        e.preventDefault();
         var rel = $(this).attr('rel');
         if(rel == 0){
             $(this).removeClass('border-0');
             $(this).addClass('border-left');
             $('#is').show();
             $(this).attr('rel', 1);
+            return false;
         }else{
             $(this).removeClass('border-left');
             $(this).addClass('border-0');
             $('#is').hide();
             $(this).attr('rel', 0);
+            $('#fromsearch').submit();
         }
 
     });

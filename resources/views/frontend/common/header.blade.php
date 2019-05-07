@@ -8,14 +8,16 @@
                 <i class="fas fa-envelope"></i> {{setting('site.email')}}
                 </div>
             <div class="bd-highlight p-1">
-                <div class="input-group">
-                    <input id="is" type="text" class="form-control mw100 hidden bg-top border-right-0 h28" name="s" >
-                    <div class="input-group-btn">
-                        <button id="search" rel="0" class="border h28 lh26 bg-top border-0 rounded-right">
-                        <i class="fa fa-search text-white" aria-hidden="true"></i>
-                        </button>
+                <form id="fromsearch" action="/search" method="get">
+                    <div class="input-group">
+                        <input id="is" type="text" class="form-control mw100 hidden bg-top border-right-0 h28" name="s" >
+                        <div class="input-group-btn">
+                            <button id="search" rel="0" class="border h28 lh26 bg-top border-0 rounded-right">
+                            <i class="fa fa-search text-white" aria-hidden="true"></i>
+                            </button>
+                        </div>
                     </div>
-                    </div>
+                </form>
             </div>
             <div class="bd-highlight p-1">
                 <a href="/home/vi"> <img src="/images/vn.png" alt=""></a>

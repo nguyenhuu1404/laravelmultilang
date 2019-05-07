@@ -14,6 +14,9 @@
     @else
         <meta name="description" content="DTJ Hometel là căn hộ khách sạn cao cấp với đầy đủ tiện nghi, dịch vụ đẳng cấp 3*+, thiết kế tối giản ,tiện nghi tinh tế đến từng chi tiết ..">
     @endif
+    @if(isset($keywords))
+    <meta name="keywords" content="{{ $keywords }}">
+    @endif
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
 	<link rel="stylesheet" href="{{ asset('css/all.css') }}">

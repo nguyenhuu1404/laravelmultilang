@@ -18,6 +18,7 @@ class PageController extends Controller
         $data['sliders'] = json_decode($page->sliders);
         $data['title'] = $page['title'];
         $data['description'] = $page['meta_description'];
+        $data['keywords'] = $page->meta_keywords;
 
         return view('frontend.pages.index', $data);
     }

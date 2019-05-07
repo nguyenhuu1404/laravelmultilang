@@ -75,6 +75,8 @@ return [
     'bc' => 'Booking completed',
     'choosedate' => 'Choose a date',
     'bookingpage' => 'Booking',
-    'emailsuccess' => 'Sign up success'
+    'emailsuccess' => 'Sign up success',
+    'search' => 'Search',
+    'noresult' => 'No result'
 
 ];

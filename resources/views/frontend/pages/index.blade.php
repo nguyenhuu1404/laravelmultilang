@@ -3,11 +3,13 @@
 <section>
 @if($sliders)
     <div id="slider" class="carousel slide" data-ride="carousel">
+        @if(count($sliders) > 1)
         <ol class="carousel-indicators">
             @foreach ($sliders as $key => $slider)
             <li data-target="#slider" data-slide-to="{{$key}}" class="{{ $key == 0 ? 'active' : ''}}"></li>
             @endforeach
         </ol>
+        @endif
         <div class="carousel-inner">
             @foreach ($sliders as $key => $slider)
                 <div class="carousel-item {{ $key == 0 ? 'active' : ''}}">
