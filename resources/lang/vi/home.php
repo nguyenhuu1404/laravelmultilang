@@ -74,7 +74,7 @@ return [
     'peri' => 'Thông tin cá nhân',
     'bc' => 'Đặt phòng hoàn tất',
     'choosedate' => 'Chọn ngày',
-    'bookingpage' => 'Trang đặt phòng'
-
+    'bookingpage' => 'Trang đặt phòng',
+    'emailsuccess' => 'Đăng kí nhận email thành công'
 
 ];

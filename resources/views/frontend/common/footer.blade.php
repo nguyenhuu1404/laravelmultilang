@@ -9,12 +9,23 @@
                     <div class="mb-3 mt-3 solid2"></div>
 
                     @lang('home.signup')<br>
-                    <div class="row mt-3">
-                        <div class="col-9">
-                            <input type="text" class="form-control" placeholder="Email">
+                    <form action="/home/saveemail" method="post">
+                        {{ csrf_field() }}
+                        <div class="row mt-3">
+                            <div class="col-9">
+                                <div class="form-group">
+                                    <input name="email" type="text" class="form-control {{ $errors->has('email') ? 'is-invalid' : '' }}" placeholder="Email">
+                                    <div class="invalid-feedback">{{ $errors->first('email') }}</div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                            <button class="form-control btn btn-light">@lang('home.send')</button>
+                            </div>
+                            @if(session('emailsuccess'))
+                            <div class="alert col-12 alert-success">@lang('home.emailsuccess')</div>
+                            @endif
                         </div>
-                        <div class="col-3"><button class="form-control btn btn-light">@lang('home.send')</button></div>
-                    </div>
+                    </form>
                     <div class="mt-3">
                         <a href="https://www.facebook.com/dtjhometel/" class="ml-0 text-white"><i class="fab fs40 fa-facebook-square"></i></a>
 

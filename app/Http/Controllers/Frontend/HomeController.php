@@ -6,12 +6,14 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Storage;
 use App;
+use Validator;
 
 use App\Slider;
 use App\Hometel;
 use App\Apartment;
 use App\Service;
 use App\About;
+use App\Newsletter;
 
 class HomeController extends Controller
 {
@@ -41,5 +43,21 @@ class HomeController extends Controller
         session()->put('locale', $lang);
         return redirect()->back();
     }
+    function saveEmail(Request $request){
+        $validator = Validator::make($request->all(), [
+            'email' => 'required|email|unique:newsletters',
+        ]);
 
+        if($validator->fails()) {
+            return redirect('/')
+                        ->withErrors($validator)
+                        ->withInput();
+        }else{
+            $email = [
+                'email' => $request->input('email')
+            ];
+            Newsletter::create($email);
+            return redirect('/')->with('emailsuccess', 1);
+        }
+    }
 }

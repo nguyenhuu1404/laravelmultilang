@@ -17,6 +17,7 @@ Route::group(['prefix' => 'admin'], function () {
 Route::group(['as' => 'frontend.', 'namespace' => 'Frontend'], function() {
     Route::get('/', 'HomeController@index')->name('home.index');
     Route::post('/home/setLang', 'HomeController@setLang');
+    Route::post('/home/saveemail', 'HomeController@saveEmail');
     Route::get('/home/{lang}', 'HomeController@lang');
     Route::get('/hometel/{id}-{slug}', 'HometelController@index')->where(['id' => '[0-9]+']);
     Route::get('/apartment/{hometel}-{id}-{slug}', 'ApartmentController@index')->where(['id' => '[0-9]+', 'hometel' => '[0-9]+']);

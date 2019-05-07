@@ -74,6 +74,7 @@ return [
     'peri' => 'Personal information',
     'bc' => 'Booking completed',
     'choosedate' => 'Choose a date',
-    'bookingpage' => 'Booking'
+    'bookingpage' => 'Booking',
+    'emailsuccess' => 'Sign up success'
 
 ];
