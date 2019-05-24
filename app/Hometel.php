@@ -12,4 +12,7 @@ class Hometel extends Model
     public function apartments() {
         return $this->hasMany('App\Apartment', 'hometel_id', 'id');
     }
+    public function photos() {
+        return $this->hasMany('App\Photo', 'hometel_id', 'id');
+    }
 }

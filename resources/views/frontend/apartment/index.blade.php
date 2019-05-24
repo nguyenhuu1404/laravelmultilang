@@ -72,11 +72,11 @@
                             <div class="row mb-4">
                                 <div class="col">
                                     <label class="cl-icon text-uppercase" for="adult">@lang('home.adult')</label>
-                                    <input type="text" id="adult" name="adult" class="form-control" placeholder="@lang('home.adult')">
+                                    <input type="number" id="adult" class="form-control" placeholder="@lang('home.adult')" name="adult" min="1" max="{{ $apartment->adult }}">
                                 </div>
                                 <div class="col">
                                     <label class="cl-icon text-uppercase" for="children">@lang('home.children')</label>
-                                    <input type="text" id="children" name='children' class="form-control" placeholder="@lang('home.children')">
+                                    <input type="number" class="form-control" placeholder="@lang('home.children')" id="children" name="children" min="1" max="{{ $apartment->children }}">
                                 </div>
                             </div>
                             <input type="hidden" name="apartmentId" value="{{$apartment->id}}"/>
@@ -102,7 +102,8 @@
                 </div>
                 @endif
 
-                @if($posts)
+                @if(count($posts) > 0)
+
                 <h2 class="fs30 xanh2 text-uppercase mb-4 utmavobold">@lang('home.relatednews')</h2>
                 @foreach($posts as $new)
                 <div class="row mb-3">
@@ -110,14 +111,11 @@
                         <a href="/tin-tuc/{{$new['id']}}-{{$new['slug']}}"><img src="{{ Storage::url($new['image']) }}" alt="" class="w-100"></a>
                     </div>
                     <div class="col-6 pl-0">
-                        <h4 class="fs12 utmavobold">
+                        <h4 class="fs14 font-weight-bold ">
                         {!!$new->getTranslatedAttribute('title', $locale, 'fallbackLocale')!!}
                         </h4>
-                        <div class="fs8 mb-1 hidden ngay utmavobold">
-                            <i class="fas fa-user"></i> {{ $new->authorId->first()->name }} &nbsp;
-                            <i class="fas fa-calendar-alt"></i> {{ date('d / m / Y', strtotime($new->created_at)) }}
-                        </div>
-                        <div class="fs12">
+
+                        <div class="fs14">
                             {!! Str::limit($new->getTranslatedAttribute('excerpt', $locale, 'fallbackLocale'), 50) !!}
                         </div>
                     </div>

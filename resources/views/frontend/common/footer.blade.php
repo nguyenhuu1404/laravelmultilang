@@ -1,4 +1,4 @@
-<footer class="footer text-white">
+<footer data-wow-duration="4s" class="footer text-white wow fadeInUp">
     <div class="container">
         <div class="footer1 pt-5 pb-4">
             <div class="row">
@@ -26,8 +26,11 @@
                             @endif
                         </div>
                     </form>
-                    <div class="mt-3">
-                        <a href="https://www.facebook.com/dtjhometel/" class="ml-0 text-white"><i class="fab fs40 fa-facebook-square"></i></a>
+                    <div class="">
+                        <a href="{{setting('site.facebook')}}" class="ml-0 text-white"><i class="fab fs40 fa-facebook-square"></i></a>
+                        <a href="{{setting('site.instagram')}}" class="ml-0 fs40 text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="{{setting('site.twitter')}}" class="ml-0 fs40 text-white"><i class="fab fa-twitter-square"></i></a>
+                        <a href="{{setting('site.zalo')}}" class="text-white"><img style="width: 38px; margin-bottom: 22px;" src="/images/zalo.png" alt=""></a>
 
                     </div>
 

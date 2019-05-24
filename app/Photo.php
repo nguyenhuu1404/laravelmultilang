@@ -11,5 +11,8 @@ class Photo extends Model
     public function apartment(){
         return $this->belongsTo('App\Apartment', 'apartment_id', 'id');
     }
+    public function hometel(){
+        return $this->belongsTo('App\Hometel', 'hometel_id', 'id');
+    }
 
 }

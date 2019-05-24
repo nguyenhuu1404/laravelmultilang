@@ -14,13 +14,18 @@ class PageController extends Controller
 {
     public function index($slug){
         $page = Page::whereTranslation('slug', '=', $slug)->get()->first();
-        $data['page'] = $page;
-        $data['sliders'] = json_decode($page->sliders);
-        $data['title'] = $page['title'];
-        $data['description'] = $page['meta_description'];
-        $data['keywords'] = $page->meta_keywords;
+        if($page){
+            $data['page'] = $page;
+            $data['sliders'] = json_decode($page->sliders);
+            $data['title'] = $page['title'];
+            $data['description'] = $page['meta_description'];
+            $data['keywords'] = $page->meta_keywords;
 
-        return view('frontend.pages.index', $data);
+            return view('frontend.pages.index', $data);
+        }else{
+            return redirect('/');
+        }
+
     }
     public function info(){
         $data['title'] = 'hotel';//setting('site.title');

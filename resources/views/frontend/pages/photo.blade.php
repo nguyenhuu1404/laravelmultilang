@@ -13,30 +13,30 @@
         <h1 class="fs30 xanh2 text-uppercase utmavobold mt-4 mb-3">@lang('home.cnhalong')</h1>
         <div class="row">
             <div class="col-12 col-md-6">
-            <a href="/images/2.JPG" data-fancybox="gallery" class="group">
-                <img src="/images/2.JPG" alt="" class="w-100">
+            <a href="/images/anh1.JPG" data-fancybox="gallery" class="group">
+                <img src="/images/anh1.JPG" alt="" class="w-100">
                 </a>
             </div>
             <div class="col-12 col-md-6">
                 <div class="row">
                     <div class="col-6 mb-4">
-                        <a href="/images/3.JPG" data-fancybox="gallery" class="group">
-                        <img src="/images/3.JPG" alt="" class="w-100">
+                        <a href="/images/anh2.JPG" data-fancybox="gallery" class="group">
+                        <img src="/images/anh2.JPG" alt="" class="w-100">
                         </a>
                     </div>
                     <div class="col-6 mb-4">
-                    <a href="/images/6.JPG" data-fancybox="gallery" class="group">
-                        <img src="/images/6.JPG" alt="" class="w-100">
+                    <a href="/images/anh3.JPG" data-fancybox="gallery" class="group">
+                        <img src="/images/anh3.JPG" alt="" class="w-100">
                         </a>
                     </div>
                     <div class="col-6 mb-4">
-                    <a href="/images/7.JPG" data-fancybox="gallery" class="group">
-                        <img src="/images/7.JPG" alt="" class="w-100">
+                    <a href="/images/anh4.JPG" data-fancybox="gallery" class="group">
+                        <img src="/images/anh4.JPG" alt="" class="w-100">
                         </a>
                     </div>
                     <div class="col-6 mb-4">
-                    <a href="/images/8.JPG" data-fancybox="gallery" class="group">
-                        <img src="/images/8.JPG" alt="" class="w-100">
+                    <a href="/images/anh5.JPG" data-fancybox="gallery" class="group">
+                        <img src="/images/anh5.JPG" alt="" class="w-100">
                         </a>
                     </div>
                 </div>
@@ -47,39 +47,39 @@
             <div class="col-3">
                 <div class="row">
                     <div class="col-12 mb-4">
-                        <a href="/images/9.JPG" data-fancybox="gallery" class="group">
-                            <img src="/images/9.JPG" alt="" class="w-100">
+                        <a href="/images/anh6.JPG" data-fancybox="gallery" class="group">
+                            <img src="/images/anh6.JPG" alt="" class="w-100">
                         </a>
                     </div>
                     <div class="col-12 mb-4">
-                        <a href="/images/10.JPG" data-fancybox="gallery" class="group">
-                            <img src="/images/10.JPG" alt="" class="w-100">
+                        <a href="/images/anh7.JPG" data-fancybox="gallery" class="group">
+                            <img src="/images/anh7.JPG" alt="" class="w-100">
                         </a>
                     </div>
                 </div>
             </div>
             <div class="col-6">
-                <a href="/images/12.JPG" data-fancybox="gallery" class="group">
-                    <img src="/images/12.JPG" alt="" class="w-100">
+                <a href="/images/anh8.jpg" data-fancybox="gallery" class="group">
+                    <img src="/images/anh8.jpg" alt="" class="w-100">
                 </a>
             </div>
             <div class="col-3">
                 <div class="row">
                     <div class="col-12 mb-4">
-                        <a href="/images/13.JPG" data-fancybox="gallery" class="group">
-                            <img src="/images/13.JPG" alt="" class="w-100">
+                        <a href="/images/anh9.jpg" data-fancybox="gallery" class="group">
+                            <img src="/images/anh9.jpg" alt="" class="w-100">
                         </a>
                     </div>
                     <div class="col-12 mb-4">
-                        <a href="/images/14.JPG" data-fancybox="gallery" class="group">
-                            <img src="/images/14.JPG" alt="" class="w-100">
+                        <a href="/images/anh10.JPG" data-fancybox="gallery" class="group">
+                            <img src="/images/anh10.JPG" alt="" class="w-100">
                         </a>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="row">
+        <!--div class="row">
             <div class="col-12 col-md-6">
             <a href="/images/15.JPG" data-fancybox="gallery" class="group">
                 <img src="/images/15.JPG" alt="" class="w-100">

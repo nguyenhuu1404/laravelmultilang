@@ -29,6 +29,20 @@
     <script src="{{ asset('js/jquery-ui.js') }}"></script>
     <script src="{{ asset('js/jquery.fancybox.min.js') }}"></script>
 
+    @if(setting('site.google_analytics_tracking_id'))
+    @php
+        $analyticsId = setting('site.google_analytics_tracking_id');
+    @endphp
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{$analyticsId}}"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', '{{$analyticsId}}');
+    </script>
+    @endif
 </head>
 <body>
 

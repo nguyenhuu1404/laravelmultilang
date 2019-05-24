@@ -101,8 +101,14 @@ class BookingController extends Controller
             $data['bookApartment'] = $bookApartment;
             return view('frontend.booking.payapartment', $data);
         }else if(session('choiceDate')){
-            $data['apartments'] = Apartment::where('status', 1)->get();
-            $data['choiceDate'] = session('choiceDate');
+            $choiceDate = session('choiceDate');
+            if($choiceDate['children']){
+                $data['apartments'] = Apartment::where('status', 1)->where('adult', '>=', $choiceDate['adult'])->where('children', '>=', $choiceDate['children'])->get();
+            }else{
+                $data['apartments'] = Apartment::where('status', 1)->where('adult', '>=', $choiceDate['adult'])->get();
+            }
+
+            $data['choiceDate'] = $choiceDate;
             return view('frontend.booking.choiceapartment', $data);
         } else {
             return redirect('/booking/apartment');

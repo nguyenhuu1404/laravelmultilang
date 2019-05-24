@@ -11,7 +11,7 @@ return [
     'contact_info' => 'EMAIL:         nationhotel@example.com<br>
     ĐIỆN THOẠI:         +1 015 344 343 31<br>
     SKYPE:         hotelnationskype<br>
-    Sales staff: 0987 328 095 - 0986 314 470 - 0947 653 920<br>',
+    Sales staff: 0987.328.095 - 0986.314.470 - 0947.653.920<br>',
     'contact_success' => "Contact success",
     'readmore' => 'Readmore',
     'footer_info' => 'Hometel Ha Long: Greenbay Premium building, Hoang Quoc Viet, Hung Thang, Ha Long, Quang Ninh<br>
@@ -19,7 +19,7 @@ return [
     Phone: 024.7304.5999<br>
     Email: hometel@dtj.com.vn<br>
     Hotline: 0947.479.888<br>
-    Sales staff: 0987 328 095 - 0986 314 470 - 0947 653 920<br>',
+    Sales staff: 0987.328.095 - 0986.314.470 - 0947.653.920<br>',
     'bookingnow' => 'Booking now',
     'booking' => 'Booking',
     'checkin' => 'Check-in',
@@ -65,8 +65,8 @@ return [
     <b>Account Holder:</b> DTJ Investment and Distribution Joint Stock Company<br>
     <b>Content:</b> Full name + Telephone number<br>',
     'paythanks' => 'You have completed the booking procedures. DTJ Hometel staff will contact you as soon as possible to confirm the information. Or you can contact us directly for advice.<br>
-    Hotline: 0973 275 424<br>
-    Sales staff: 0987 328 095 - 0986 314 470 - 0947 653 920<br><br>
+    Hotline: <span class="text-white">0973.275.424</span><br/>
+    Nhân viên kinh doanh: <span class="text-white">0987.328.095 - 0986.314.470 - 0947.653.920</span><br><br>
     Sincerely thank you!',
     'chooseroom' => 'Choose a room',
     'chooseapartment' => 'Choose apartments',
@@ -77,6 +77,7 @@ return [
     'bookingpage' => 'Booking',
     'emailsuccess' => 'Sign up success',
     'search' => 'Search',
-    'noresult' => 'No result'
+    'noresult' => 'No result',
+    'services' => 'Services'
 
 ];

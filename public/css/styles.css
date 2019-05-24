@@ -14,7 +14,7 @@
 }
 
 body{
-    font-family: 'utmavo';
+    font-family: 'Open Sans';
     font-size: 14px;
     color: #000000;
 }
@@ -74,6 +74,8 @@ a:hover{text-decoration: none;}
 .dat{background: #f70707;}
 .pointer{cursor: pointer;}
 .cl-new{color: #2b2b2b;}
+.new{text-align: justify;}
+.new img{width: 100% !important;}
 .bg_highline{background: url(../images/bg.jpg) repeat;}
 .bg_highline h4:after{border: dotted 1px black;}
 .gach{width: 190px; margin: 0px auto; border-bottom: 1px dotted black; margin-bottom: 10px;}
@@ -94,7 +96,7 @@ a:hover{text-decoration: none;}
 .dangki{height: 48px;background: #079e88; border: none; font-size: 15px; color: white;}
 .hometel{color: #666666 !important; font-size: 16.5px; text-align: justify;}
 .about img, .hometel img{display: block; margin: 0px auto;}
-.bc{background: url(../images/breadcrumb.jpg) no-repeat; background-size: cover; padding: 70px 0px; }
+.bc{background: url(../images/breadcrumb.jpg) no-repeat; background-size: cover; padding: 150px 0px; }
 .send{background: #ff0000; color: white; font-size: 20px; padding: 5px 35px; border: none;}
 .do3{background: #ff0000;}
 .cate{box-shadow: 0px 0px 3px 4px #ededed;
@@ -149,9 +151,12 @@ a:hover{text-decoration: none;}
 }
 @media all and (max-width: 767px) {
     .about img, .hometel img{width: 100% !important;}
-
+    #service .owl-nav{display: none !important;}
+    .xs-p0{padding: 0px !important;}
 }
 @media all and (max-width: 400px) {
+    #service .owl-nav{display: none !important;}
+    .xs-p0{padding: 0px !important;}
     .booking-right{right: 0px !important; width: 100% !important; margin-top: 15px;}
     .about img, .hometel img{width: 100% !important;}
 }

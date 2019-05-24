@@ -18,6 +18,7 @@ class HometelController extends Controller
         $data['description'] = $hometel['description'];
         $data['keywords'] = $hometel->meta_keywords;
         $data['hometel'] = $hometel;
+        $data['services'] = $hometel->photos;
         $apartments = Apartment::where(['status' => 1, 'hometel_id' => $id])->get();
         $data['apartments'] = $apartments;
         $apartmentIds = [];

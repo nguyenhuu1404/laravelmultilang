@@ -11,7 +11,7 @@ return [
     'contact_info' => 'EMAIL:         nationhotel@example.com<br>
     ĐIỆN THOẠI:         +1 015 344 343 31<br>
     SKYPE:         hotelnationskype<br>
-    Nhân viên kinh doanh: 0987 328 095 - 0986 314 470 - 0947 653 920<br>',
+    Nhân viên kinh doanh: 0987.328.095 - 0986.314.470 - 0947.653.920<br>',
     'contact_success' => "Liên hệ thành công",
     'readmore' => 'Xem thêm',
     'footer_info' => 'Hometel Hạ Long: tòa nhà Greenbay Premium, Hoàng Quốc Việt, Hùng Thắng, Hạ Long, Quảng Ninh<br>
@@ -19,7 +19,7 @@ return [
     Điện thoại: 024.7304.5999<br>
     Email: hometel@dtj.com.vn<br>
     Hotline: 0973.275.424<br>
-    Nhân viên kinh doanh: 0987 328 095 - 0986 314 470 - 0947 653 920<br>',
+    Nhân viên kinh doanh: 0987.328.095 - 0986.314.470 - 0947.653.920<br>',
     'bookingnow' => "Đặt phòng ngay",
     'booking' => "Đặt phòng",
     'checkin' => 'Ngày nhận phòng',
@@ -65,8 +65,8 @@ return [
     <b>Chủ Tài Khoản:</b> Công Ty Cổ Phần Đầu Tư và Phân Phối DTJ <br/>
     <b>Nội Dung:</b> Họ và tên + SĐT<br/><br/>',
     'paythanks' => 'Quý khách đã hoàn tất các thủ tục đặt phòng. Nhân viên của DTJ Hometel sẽ liên hệ lại với quý khách trong thời gian sớm nhất để xác nhận thông tin. Hoặc quý khách có thể liên hệ trực tiếp để được tư vấn.<br/>
-    Hotline: 0973 275 424<br/>
-    Nhân viên kinh doanh: 0987 328 095 - 0986 314 470 - 0947 653 920<br/><br/>
+    Hotline: <span class="text-white">0973.275.424</span><br/>
+    Nhân viên kinh doanh: <span class="text-white">0987.328.095 - 0986.314.470 - 0947.653.920</span><br/><br/>
     Trân trọng cảm ơn!',
     'chooseroom' => 'Chọn phòng',
     'chooseapartment' => 'Chọn căn hộ',
@@ -77,6 +77,7 @@ return [
     'bookingpage' => 'Trang đặt phòng',
     'emailsuccess' => 'Đăng kí nhận email thành công',
     'search' => 'Tìm kiếm',
-    'noresult' => 'Không có kết quả nào'
+    'noresult' => 'Không có kết quả nào',
+    'services' => 'Dịch vụ'
 
 ];

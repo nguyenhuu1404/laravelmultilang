@@ -18,14 +18,8 @@ class NewController extends Controller
         $data['title'] = 'Tin tức';
         $data['description'] = 'Tin tức';
         $data['slider'] = Slider::where('status', 1)->where('trang', 'new')->first();
-        $topNews = Post::where('status', 1)->orderBy('id', 'desc')->limit(3)->get();
-        //dd($topNews[2]->authorId->first()->name);
-        $data['topNews'] = $topNews;
-        $topNewIds = [];
-        foreach($topNews as $topNew){
-            $topNewIds[] = $topNew['id'];
-        }
-        $data['news'] = Post::where('status', 1)->orderBy('id', 'desc')->whereNotIn('id', $topNewIds)->paginate(10);
+        
+        $data['news'] = Post::where('status', 1)->orderBy('id', 'desc')->paginate(10);
         return view('frontend.news.index', $data);
     }
     function detail($id){
@@ -48,14 +42,8 @@ class NewController extends Controller
         $data['description'] = $category->first()->name;
 
         $data['slider'] = Slider::where('status', 1)->where('trang', 'new')->first();
-        $topNews = Post::where('status', 1)->orderBy('id', 'desc')->where('category_id', $categoryId)->limit(3)->get();
-        //dd($topNews[2]->authorId->first()->name);
-        $data['topNews'] = $topNews;
-        $topNewIds = [];
-        foreach($topNews as $topNew){
-            $topNewIds[] = $topNew['id'];
-        }
-        $data['news'] = Post::where('status', 1)->where('category_id', $categoryId)->whereNotIn('id', $topNewIds)->orderBy('id', 'desc')->paginate(10);
+       
+        $data['news'] = Post::where('status', 1)->where('category_id', $categoryId)->orderBy('id', 'desc')->paginate(10);
 
         return view('frontend.news.category', $data);
     }

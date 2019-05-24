@@ -45,12 +45,3 @@ Route::group(['as' => 'frontend.', 'namespace' => 'Frontend'], function() {
     Route::get('/{slug}', 'PageController@index');
 });
 
-Route::group(['as' => 'api.', 'prefix' => 'api', 'namespace' => 'Frontend'], function() {
-
-});
-
-
-
-Route::group(['prefix' => 'admin'], function () {
-    Voyager::routes();
-});
