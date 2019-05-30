@@ -79,34 +79,30 @@
             </div>
         </div>
 
-        <!--div class="row">
+        <div class="row">
             <div class="col-12 col-md-6">
-            <a href="/images/15.JPG" data-fancybox="gallery" class="group">
-                <img src="/images/15.JPG" alt="" class="w-100">
+            <a href="/images/anh18.jpg" data-fancybox="gallery" class="group">
+                <img src="/images/anh18.jpg" alt="" class="w-100">
                 </a>
             </div>
             <div class="col-12 col-md-6">
                 <div class="row">
                     <div class="col-6 mb-4">
-                        <a href="/images/16.JPG" data-fancybox="gallery" class="group">
-                        <img src="/images/16.JPG" alt="" class="w-100">
+                        <a href="/images/anh16.jpg" data-fancybox="gallery" class="group">
+                        <img src="/images/anh16.jpg" alt="" class="w-100">
                         </a>
                     </div>
                     <div class="col-6 mb-4">
-                    <a href="/images/17.JPG" data-fancybox="gallery" class="group">
-                        <img src="/images/17.JPG" alt="" class="w-100">
+                    <a href="/images/anh17.jpg" data-fancybox="gallery" class="group">
+                        <img src="/images/anh17.jpg" alt="" class="w-100">
                         </a>
                     </div>
                     <div class="col-6 mb-4">
-                    <a href="/images/18.JPG" data-fancybox="gallery" class="group">
-                        <img src="/images/18.JPG" alt="" class="w-100">
+                    <a href="/images/anh19.jpg" data-fancybox="gallery" class="group">
+                        <img src="/images/anh19.jpg" alt="" class="w-100">
                         </a>
                     </div>
-                    <div class="col-6 mb-4">
-                    <a href="/images/19.JPG" data-fancybox="gallery" class="group">
-                        <img src="/images/19.JPG" alt="" class="w-100">
-                        </a>
-                    </div>
+
                 </div>
             </div>
         </div>

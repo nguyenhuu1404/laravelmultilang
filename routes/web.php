@@ -42,6 +42,7 @@ Route::group(['as' => 'frontend.', 'namespace' => 'Frontend'], function() {
     Route::get('/lien-he', 'PageController@contact');
     Route::post('/lien-he', 'PageController@saveContact');
     Route::get('/hinh-anh', 'PageController@photo');
+    Route::get('/dich-vu-tien-ich', 'PageController@photo');
     Route::get('/{slug}', 'PageController@index');
 });
 

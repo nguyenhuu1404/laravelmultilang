@@ -132,12 +132,14 @@
     <div class="container">
         <div id="service" class="owl-carousel owl-theme">
             @foreach($services as $service)
+            <a href="/dich-vu-tien-ich">
             <div class="item">
                 <img class="d-block w-100" src="{{ Storage::url($service->image) }}" alt="{{$service->name}}">
-                <div class="fs16 utmavobold mt-3">
+                <div class="fs16 text-black utmavobold mt-3">
                 {!!$service->getTranslatedAttribute('name', $locale, 'fallbackLocale')!!}
                 </div>
             </div>
+            </a>
             @endforeach
         </div>
     </div>
@@ -177,7 +179,7 @@
             }
         },
         navText: ["<img src='{{ asset('/images/left.png')}}'>","<img src='{{ asset('/images/right.png')}}'>"],
-        autoplayTimeout:1000,
+        autoplayTimeout:7000,
         autoplayHoverPause:true
     });
 
@@ -201,7 +203,7 @@
                 loop:false
             }
         },
-        autoplayTimeout:1000,
+        autoplayTimeout:6000,
         autoplayHoverPause:true
     });
 
