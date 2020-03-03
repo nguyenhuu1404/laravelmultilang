@@ -14,44 +14,12 @@
             <div class="carousel-inner">
                 @foreach ($sliders as $key => $slider)
                     <div class="carousel-item {{ $key == 0 ? 'active' : ''}}">
-                        <img src="{{ Storage::url($slider) }}" class="d-block w-100" alt="...">
+                        <img src="/images/slider.jpg" class="d-block w-100" alt="...">
                     </div>
                 @endforeach
             </div>
         </div>
         @endif
-
-        <div data-wow-duration="3s" class="wow slideInRight booking booking-right md-absolute">
-            <div class="fs21 xanh3 p-1 utmavobold text-white text-center text-uppercase">@lang('home.booking')</div>
-            <form id='choicedate' action="/booking/choiceapartment" method="post">
-                {{ csrf_field() }}
-                <div class="booking-content p-3">
-                    <div class="row mb-3">
-                        <div class="col">
-                            <p class="mb-2">@lang('home.checkin')</p>
-                            <input name="datein" id="from" type="text" class="form-control h30" >
-                        </div>
-                        <div class="col">
-                            <p class="mb-2">@lang('home.checkout')</p>
-                            <input name="dateout" id="to" type="text" class="form-control h30" >
-                        </div>
-                    </div>
-                    <div class="row mb-3">
-                        <div class="col">
-                            <p class="mb-2">@lang('home.adult')</p>
-                            <input id="adult" name="adult" type="text" class="form-control h30" >
-                        </div>
-                        <div class="col">
-                            <p class="mb-2">@lang('home.children')</p>
-                            <input id="children" name="children" type="text" class="form-control h30" >
-                        </div>
-
-                    </div>
-                    <button class="dangki mb-1 text-uppercase text-center w-100 rounded">@lang('home.check')</button>
-
-                </div>
-            </form>
-        </div>
     </div>
 </section>
 @if($hometels)

@@ -11,6 +11,8 @@ use TCG\Voyager\Models\Post;
 use TCG\Voyager\Models\Category;
 use Illuminate\Support\Str;
 use App\Slider;
+use App\Exports\PostsExport;
+use Maatwebsite\Excel\Facades\Excel;
 
 class NewController extends Controller
 {
@@ -46,5 +48,10 @@ class NewController extends Controller
         $data['news'] = Post::where('status', 1)->where('category_id', $categoryId)->orderBy('id', 'desc')->paginate(10);
 
         return view('frontend.news.category', $data);
+    }
+
+    public function export()
+    {
+        return Excel::download(new PostsExport, 'posts.xlsx');
     }
 }
